@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antojos by Dulce Delicias</title>
+    <title>Antojos by Dulce Delicias - Rosa</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            /* Fondo degradado suave en tonos rosados */
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0ec 100%);
             height: 100vh;
             margin: 0;
             display: flex;
@@ -17,42 +18,48 @@
         .card {
             background: white;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 16px; /* Un borde un poco más redondeado se ve más suave */
+            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.15); /* Sombra suave en tono rosado */
             text-align: center;
             max-width: 450px;
             width: 100%;
+            border: 1px solid #ffd6e7;
         }
         h1 {
-            color: #d97706;
-            font-size: 26px;
+            color: #d63384; /* Un tono rosado fuerte para el título principal */
+            font-size: 28px;
             margin-bottom: 15px;
+            font-weight: 700;
         }
         p {
-            color: #4b5563;
+            color: #6c757d;
             font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 25px;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
         .btn {
             display: inline-block;
-            background-color: #d97706;
+            /* Botón en un tono rosado vibrante */
+            background-color: #e83e8c;
             color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
+            padding: 14px 30px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.2s ease;
+            font-size: 16px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(232, 62, 140, 0.2);
         }
         .btn:hover {
-            background-color: #b45309;
+            background-color: #d63384; /* Un tono más oscuro al pasar el ratón */
+            transform: translateY(-1px);
         }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Antojos by Dulce Delicias</h1>
-        <p>Espacio de trabajo colaborativo para Brenda y Kalena. Gestión y administración del sistema.</p>
+        <p>Espacio de trabajo exclusivo para Brenda y Kalena. Gestión, pedidos y administración del sistema.</p>
         <a href="/admin/" class="btn">Ir al Panel de Administración</a>
     </div>
 </body>

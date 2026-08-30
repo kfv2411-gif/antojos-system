@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def home(request):
+    return HttpResponse(
+        "<h1>¡Bienvenida a Antojos by Dulce Delicias!</h1>",
+        "<p>Espacio de trabajo para Brenda y Kalena.</p>",
+        "<p><a href='/admin/'>Ir al Panel de Administración</a></p>"
+    )
